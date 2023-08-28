@@ -19,7 +19,7 @@ class ApiPassword
     public function handle(Request $request, Closure $next)
     {
         try {
-            if ($request->header('api_password') != null && $request->header('api_password') == '&gig^$ll#!5fY3nXj'){
+            if ($request->header('api_password') != null && $request->header('api_password') == ''){
                 return $next($request);
             }else {
                 return response()->json([
