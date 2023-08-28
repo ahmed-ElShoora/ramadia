@@ -1,0 +1,117 @@
+/* Start Images Contact  */
+.images-contact{
+    padding-top: 130px;
+    padding-bottom: 30px;
+}
+.images-contact .img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.images-contact .img img{
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+}
+@media (max-width: 700px) {
+    .images-contact{
+        padding-top: 70px;
+    }
+    .images-contact .img img{
+        max-width: 400px;
+    }
+}
+/* End Images Contact  */
+/* Start Contact  */
+.landing{
+    width: 100%;
+    overflow: hidden;
+}
+.landing .msg{
+    position: fixed;
+    background: var(--main-color);
+    color: #fff;
+    padding: 20px;
+    left: 0;
+    top: 120px;
+    border-bottom: 2px solid var(--secound-color);
+    display: none;
+}
+.contact{
+    padding: 60px 0;
+}
+.contact .container{
+    display: flex;
+    justify-content: center;
+}
+.contact .logo img{
+    width: 110px;
+}
+.contact .form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.contact .form h1{
+    text-align: center;
+    color: #fff;
+    line-height: 1.8;
+    margin: 0;
+    padding-bottom: 30px;
+}
+.contact .form form{
+    display: flex;
+    flex-direction: column;
+}
+.contact .form form input,
+.contact .form form textarea,
+.contact .form form button{
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #777;
+    font-size: 17px;
+    caret-color: var(--secound-color);
+}
+.contact .form form input:focus,
+.contact .form form textarea:focus,
+.contact .form form button:focus{
+    outline: none;
+}
+.contact .form form input::placeholder,
+.contact .form form textarea::placeholder{
+    color: var(--secound-color);
+}
+.contact .form form textarea{
+    resize: none;
+    height: 150px;
+}
+.contact .form form button{
+    background: var(--main-color);
+    margin-top: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    pointer-events: all;
+}
+.contact .form form button.disable{
+    pointer-events: none;
+    opacity: 0.9;
+}
+@media (max-width:700px) {
+    .contact .form form input{
+        padding: 10px;
+    }
+}
+@media (min-width: 1200px) {
+    .contact .form{
+        margin-left: 70px;
+    }
+}
+/* End Contact  */
